@@ -1,0 +1,11 @@
+{
+  "feishuPage": "https://my.feishu.cn/wiki/ZIIbwZguIivetdkPtGsc8PqAnPg?from=from_copylink",
+  "settingsEndpoint": "https://hundun-d0g97wc3v815cd196-1497599973.ap-shanghai.app.tcloudbase.com/license",
+  "followSettingsPage": true,
+  "maxInstallerBytes": 157286400,
+  "allowedDownloadHosts": [
+    "*.feishu.cn", "*.feishucdn.com", "*.feishu.net", "*.larksuite.com",
+    "*.larkoffice.com", "*.bytecdn.cn", "*.byteimg.com",
+    "github.com", "release-assets.githubusercontent.com", "objects.githubusercontent.com"
+  ]
+}

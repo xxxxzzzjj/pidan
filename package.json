@@ -1,0 +1,14 @@
+{
+  "name": "pidan-download-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "皮蛋设计 CorelDRAW 插件官方下载站",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "sync": "node scripts/build.mjs --sync",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0b1012">
+  <meta name="description" content="皮蛋设计 CorelDRAW 插件官方下载。寻边、群组扩线、曲线开槽与排版工具，让创作更顺手。支持多版本一键安装。">
+  <meta property="og:title" content="皮蛋设计 · 让创作更顺手">
+  <meta property="og:description" content="为 CorelDRAW 而生的实用工具。即刻下载皮蛋插件。">
+  <meta property="og:type" content="website">
+  <title>皮蛋设计 · 让创作更顺手</title>
+  <link rel="icon" type="image/png" href="./assets/app-icon.png">
+  <link rel="preload" as="image" href="./assets/logo.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./theme.js"></script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#download">跳到下载</a>
+  <div class="ambient" aria-hidden="true"><span></span><span></span></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header wrap">
+    <a class="wordmark" href="./" aria-label="皮蛋设计首页">
+      <img src="./assets/logo.png" width="29" height="29" alt="">
+      <strong>皮蛋设计<span class="brand-dot">.</span></strong>
+      <span class="wordmark-sub">DESIGNED FOR CORELDRAW</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#craft">插件特色</a>
+      <a href="#guide">安装指南</a>
+      <span class="nav-separator" aria-hidden="true"></span>
+      <button class="theme-toggle" type="button" aria-label="切换为浅色外观" title="切换外观">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3a8.5 8.5 0 1 0 10 10.5Z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="download" aria-labelledby="hero-title">
+      <p class="eyebrow enter"><span class="live-dot" aria-hidden="true"></span> LITTLE TOOLS. BIG POSSIBILITIES.</p>
+      <div class="logo-scene enter" aria-hidden="true">
+        <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
+        <div class="orbital-track"><i></i></div>
+        <span class="orbit-cross cross-left">+</span><span class="orbit-cross cross-right">+</span>
+        <div class="logo-halo"></div>
+        <img class="hero-logo" src="./assets/logo.png" width="138" height="138" alt="">
+        <span class="coordinate coordinate-left">PD / 01</span><span class="coordinate coordinate-right">CREATIVE FLOW</span>
+      </div>
+      <div class="hero-copy enter">
+        <p class="product-label">皮蛋插件 <span>/</span> FOR CORELDRAW</p>
+        <h1 id="hero-title">让创作<span class="title-comma">，</span><em>更顺手。</em></h1>
+        <p class="hero-description">把重复交给工具，把时间留给灵感。</p>
+      </div>
+      <div class="download-area enter">
+        <button class="download-button" type="button" data-download>
+          <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-button-label>下载 Windows 版</span>
+          <svg class="button-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="platform-line"><svg viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M1 3.1 7.5 2.2v6H1zm7.5-1L17 1v7.2H8.5zM1 9.2h6.5v6L1 14.3zm7.5 0H17v7.2l-8.5-1.1z"/></svg>Windows 7 SP1 / 10<span>·</span>64 位<span class="file-size"></span></p>
+        <p class="release-note" data-release-note>官方安装器 · 持续更新</p>
+        <p class="download-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
+      <a class="explore" href="#craft"><span>为你的工作流，多想一步</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M10 3v13m-4-4 4 4 4-4"/></svg></a>
+      <span class="hero-index" aria-hidden="true">001 — CREATION, UNINTERRUPTED</span>
+    </section>
+
+    <section class="craft wrap" id="craft" aria-labelledby="craft-title">
+      <div class="section-intro"><p class="section-label">BUILT AROUND YOUR FLOW</p><h2 id="craft-title">熟悉的 CorelDRAW，<br>多一点得心应手。</h2><p>从图形处理到安装体验，<br>让每一步都更从容。</p></div>
+      <div class="features">
+        <article class="feature"><div class="feature-top"><span>01 / 精细处理</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M9 27V12l11-5 11 5v15l-11 6Z" stroke="currentColor"/><path d="m14 24 6 3 6-3V15l-6-3-6 3Z" stroke="currentColor" stroke-dasharray="2 3"/><circle cx="31" cy="12" r="2.5" fill="currentColor"/></svg></div><h3>让细节，恰到好处。</h3><p>寻边、群组扩线、曲线开槽。<br>把常用的图形处理，放进顺手的工具里。</p></article>
+        <article class="feature"><div class="feature-top"><span>02 / 自在外观</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="7" y="8" width="26" height="25" rx="5" stroke="currentColor"/><path d="M7 16h26M20 16v17" stroke="currentColor"/><circle cx="12" cy="12" r="1" fill="currentColor"/><path d="m25 22 3 3-3 3" stroke="currentColor"/></svg></div><h3>好工具，也合你心意。</h3><p>深浅外观与自定义界面颜色，<br>让常用的工作空间，保持熟悉的模样。</p></article>
+        <article class="feature"><div class="feature-top"><span>03 / 轻松安装</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="7" y="9" width="20" height="23" rx="4" stroke="currentColor"/><path d="M13 5h16a4 4 0 0 1 4 4v18M13 21l4 4 7-8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>多个版本，一次就好。</h3><p>自动识别 CorelDRAW，支持多版本勾选。<br>也可以点选图标或窗口，找到安装位置。</p></article>
+      </div>
+    </section>
+
+    <section class="guide wrap" id="guide" aria-labelledby="guide-title">
+      <div><p class="section-label">A SIMPLE START</p><h2 id="guide-title">准备好，就开始。</h2><p class="guide-subtitle">一份安装器，几步进入创作。</p></div>
+      <div class="guide-details">
+        <details><summary><span>如何安装皮蛋插件？</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg></summary><div class="answer"><ol><li>下载并打开安装器，按系统提示授予安装权限。</li><li>保存所有 CorelDRAW 文档，勾选需要安装的版本。未检测到时，可用“手动安装”点选 CDR 图标或窗口。</li><li>点击“开始安装”。出现绿色勾形及安装完成提示后，重新打开 CorelDRAW。</li></ol><p>安装器会关闭 CorelDRAW 及相关占用程序，未保存内容可能丢失，请先保存文件。</p></div></details>
+        <details><summary><span>适合哪个系统和版本？</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg></summary><div class="answer"><p>安装器面向 Windows 7 SP1 / Windows 10 的 64 位系统，需要 .NET Framework 4.8 和相应 VC++ 运行库，缺失时会引导补齐。</p><p>目前已在 Windows 10 上完成安装器测试，Windows 7 仍待真机验证。不同 CorelDRAW 版本的实际可用情况以安装器识别和插件功能测试为准。</p></div></details>
+        <details><summary><span>以后如何获取新版本？</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg></summary><div class="answer"><p>回到这里，点击下载即可获取网站当前发布的安装器。安装器也会在线获取插件组件。更新前请先保存文档，再按提示覆盖安装。</p></div></details>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="footer-brand" href="#download">皮蛋设计<span>.</span></a><p>用顺手的工具，做喜欢的设计。</p><span>© <span data-year>2026</span> 皮蛋设计</span></footer>
+  <noscript><p class="noscript-note">请启用 JavaScript 以获取最新安装器和使用下载按钮。</p></noscript>
+</body>
+</html>
