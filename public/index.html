@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#0b1012">
-  <meta name="description" content="皮蛋设计 CorelDRAW 插件官方下载。寻边、群组扩线、曲线开槽与排版工具，让创作更顺手。支持多版本一键安装。">
+  <meta name="description" content="认识皮蛋设计 CorelDRAW 插件：浏览排版、加工、图像、文字与输出等完整功能分类，查看工具界面，体验深浅外观与多种自定义主题色。">
   <meta property="og:title" content="皮蛋设计 · 让创作更顺手">
-  <meta property="og:description" content="为 CorelDRAW 而生的实用工具。即刻下载皮蛋插件。">
+  <meta property="og:description" content="从排版加工到图文输出，一套顺手的 CorelDRAW 工具。浏览功能、查看界面，找到适合你的工作流。">
   <meta property="og:type" content="website">
   <title>皮蛋设计 · 让创作更顺手</title>
   <link rel="icon" type="image/png" href="./assets/app-icon.png">
   <link rel="preload" as="image" href="./assets/logo.png">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./showcase.css">
   <script src="./theme.js"></script>
   <script type="module" src="./app.js"></script>
+  <script type="module" src="./showcase.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#download">跳到下载</a>
@@ -29,7 +31,8 @@
       <span class="wordmark-sub">DESIGNED FOR CORELDRAW</span>
     </a>
     <nav aria-label="主导航">
-      <a href="#craft">插件特色</a>
+      <a href="#features">功能全览</a>
+      <a href="#appearance">界面与主题</a>
       <a href="#guide">安装指南</a>
       <span class="nav-separator" aria-hidden="true"></span>
       <button class="theme-toggle" type="button" aria-label="切换为浅色外观" title="切换外观">
@@ -54,6 +57,7 @@
         <p class="product-label">皮蛋插件 <span>/</span> FOR CORELDRAW</p>
         <h1 id="hero-title">让创作<span class="title-comma">，</span><em>更顺手。</em></h1>
         <p class="hero-description">把重复交给工具，把时间留给灵感。</p>
+        <p class="hero-tools">图形排版<span> / </span>生产加工<span> / </span>图文输出</p>
       </div>
       <div class="download-area enter">
         <button class="download-button" type="button" data-download>
@@ -65,14 +69,98 @@
         <p class="release-note" data-release-note>官方安装器 · 持续更新</p>
         <p class="download-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
       </div>
-      <a class="explore" href="#craft"><span>为你的工作流，多想一步</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M10 3v13m-4-4 4 4 4-4"/></svg></a>
+      <a class="explore" href="#appearance"><span>往下看看，工具也可以很合心意</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M10 3v13m-4-4 4 4 4-4"/></svg></a>
       <span class="hero-index" aria-hidden="true">001 — CREATION, UNINTERRUPTED</span>
     </section>
 
+    <div class="product-strip wrap" aria-label="插件概览">
+      <p>不止多一个按钮。<br><strong>是让整套工作，都顺起来。</strong></p>
+      <div><strong data-tool-total>60+</strong><span>工具入口，按需探索</span></div>
+      <div><strong>8<span> 类</span></strong><span>从设计到输出的日常</span></div>
+      <div><strong>你的配色</strong><span>深浅模式，自定义强调色</span></div>
+    </div>
+
+    <section class="appearance wrap" id="appearance" aria-labelledby="appearance-title">
+      <div class="showcase-heading">
+        <div><p class="section-label">A WORKSPACE THAT FEELS LIKE YOU</p><h2 id="appearance-title">顺手的界面，<br>也该有你的风格。</h2></div>
+        <p>紧凑工具窗，把画布还给创作。<br>深浅外观、自定义颜色，让常用工具看起来也合心意。</p>
+      </div>
+      <div class="studio" data-preview-mode="light">
+        <div class="studio-toolbar">
+          <div class="preview-tabs" role="group" aria-label="选择展示的工具">
+            <button type="button" data-preview-tool="align" aria-pressed="true">对齐</button>
+            <button type="button" data-preview-tool="size" aria-pressed="false">尺寸</button>
+            <button type="button" data-preview-tool="select-same" aria-pressed="false">选同</button>
+            <button type="button" data-preview-tool="keyhole" aria-pressed="false">钥匙孔</button>
+          </div>
+          <span class="preview-caption">TOOLKIT / 界面预览</span>
+        </div>
+        <div class="studio-body">
+          <div class="studio-workspace">
+            <div class="workspace-topline"><span><i></i> YOUR NEXT GREAT IDEA</span><span>DESIGN · ARRANGE · CREATE</span></div>
+            <div class="document-art" aria-hidden="true">
+              <div class="paper-ruler ruler-top"></div><div class="paper-ruler ruler-left"></div>
+              <svg viewBox="0 0 540 400" fill="none">
+                <defs><pattern id="art-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="currentColor" stroke-opacity=".065"/></pattern></defs>
+                <rect width="540" height="400" fill="url(#art-grid)"/>
+                <path d="M90 93H450M90 312H450M113 70V333M427 70V333" stroke="currentColor" stroke-opacity=".18" stroke-dasharray="4 5"/>
+                <path d="M112 125a32 32 0 0 1 32-32h123v178h-82a73 73 0 0 1-73-73Z" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M289 93h104a33 33 0 0 1 33 33v113a32 32 0 0 1-32 32H289Z" fill="currentColor" fill-opacity=".055" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="340" cy="182" r="26" fill="currentColor" fill-opacity=".13" stroke="currentColor"/>
+                <path d="M112 293v30m314-30v30m-314-15h314m-307-4-7 4 7 4m300-8 7 4-7 4" stroke="currentColor" stroke-width="1.1"/>
+                <rect x="223" y="298" width="91" height="20" rx="4" class="dimension-label"/>
+                <text x="268" y="312" text-anchor="middle" fill="currentColor" font-size="12" font-family="Segoe UI,sans-serif">300.00 mm</text>
+                <g fill="currentColor"><rect x="108" y="89" width="8" height="8" rx="1"/><rect x="422" y="89" width="8" height="8" rx="1"/><rect x="108" y="267" width="8" height="8" rx="1"/><rect x="422" y="267" width="8" height="8" rx="1"/></g>
+                <path d="m196 171 17 17-17 17m142-20 14 14-14 14" stroke="currentColor" stroke-opacity=".6" stroke-width="2"/>
+              </svg>
+              <span class="art-note">画布图形为工作流示意</span>
+            </div>
+            <div class="workspace-copy">
+              <span class="tiny-label" data-preview-index>01 / ALIGN & DISTRIBUTE</span>
+              <h3 data-preview-title>对齐、等距、成组排布。<br>都放在顺手的位置。</h3>
+              <p data-preview-description>从六向对齐到行列分布，常用操作集中在一张紧凑面板里。间距、行列数和复制方式，按你的习惯设置。</p>
+              <button class="text-action" type="button" data-preview-detail>了解对齐工具 <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+          <div class="panel-exhibit">
+            <div class="panel-exhibit-label"><span data-look-label>薄荷青 · 白色</span><span>240 DIP</span></div>
+            <img class="studio-panel" data-studio-panel src="./assets/panels/align-light.webp" width="480" height="1162" alt="对齐工具白色模式界面预览" decoding="async" loading="lazy">
+          </div>
+        </div>
+        <div class="style-controls">
+          <fieldset class="preview-mode"><legend>界面模式</legend><div><button type="button" data-mode="light" aria-pressed="true">☀ 白色</button><button type="button" data-mode="dark" aria-pressed="false">☾ 深色</button></div></fieldset>
+          <fieldset class="preview-colors"><legend>试试强调色</legend><div>
+            <button type="button" data-color="mint" style="--swatch:#2fc7b5" aria-label="薄荷青" aria-pressed="true"><i></i><span>薄荷青</span></button>
+            <button type="button" data-color="blue" style="--swatch:#668fe9" aria-label="雾霭蓝" aria-pressed="false"><i></i><span>雾霭蓝</span></button>
+            <button type="button" data-color="purple" style="--swatch:#ab7ce1" aria-label="丁香紫" aria-pressed="false"><i></i><span>丁香紫</span></button>
+            <button type="button" data-color="apricot" style="--swatch:#df9474" aria-label="暖杏橘" aria-pressed="false"><i></i><span>暖杏橘</span></button>
+          </div></fieldset>
+          <p>这里先试风格。<br>安装后可在设置中心自定义。</p>
+        </div>
+        <p class="preview-live sr-only" aria-live="polite" aria-atomic="true"></p>
+      </div>
+      <div class="interface-notes">
+        <article><span>01</span><h3>让画布，留给作品</h3><p>常用工具采用紧凑窗口，可悬浮贴边。需要更多内容时，调整窗口高度。</p></article>
+        <article><span>02</span><h3>滚动，也不丢操作</h3><p>标准工具窗保留标题与底部状态区，默认值、保存提示有固定位置。</p></article>
+        <article><span>03</span><h3>熟悉的参数，下次还在</h3><p>工具参数自动记录，常用组合可存预设；在“存盘”中导入、导出分享。</p></article>
+      </div>
+      <p class="visual-source-note">界面预览来自工具布局与主题渲染；未加载用户文档内容。浏览器中的配色选择仅用于展示。</p>
+    </section>
+
+    <section class="tool-explorer wrap" id="features" aria-labelledby="features-title">
+      <div class="showcase-heading"><div><p class="section-label">ONE TOOLKIT. MANY POSSIBILITIES.</p><h2 id="features-title">常用的功能，<br>一眼就能找到。</h2></div><p>按工作内容找工具，也可以直接搜索。<br>图标、名称、一句话用途，一眼就能了解。</p></div>
+      <div class="explorer-search-row"><label class="tool-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="tool-search" type="search" aria-label="搜索功能" placeholder="试试：排版、抠图、二维码…" autocomplete="off" maxlength="80"><button type="button" class="search-clear" aria-label="清空功能搜索" hidden>×</button></label><span class="explorer-hint">点击功能，查看界面与详情 ↗</span></div>
+      <div class="category-filters" role="group" aria-label="功能分类"></div>
+      <div class="results-header"><h3 data-category-title>全部工具</h3><p class="result-count" aria-live="polite" aria-atomic="true"></p></div>
+      <div class="tool-grid"></div>
+      <div class="empty-results" hidden><span aria-hidden="true">⌕</span><h3>暂时没找到这个工具</h3><p>换一个功能名或关键词试试。</p><button class="outline-action" type="button" data-reset-search>查看全部工具</button></div>
+      <noscript><p class="no-script-catalog">插件包含对齐、尺寸、选同、群组、转曲、容器、角度、页面、比例、盒子、弧面、槽孔、钥匙孔、连筋、描边、加工、省料、均切、尺切、点位、寻边、矫正、扩边、抠图、矢量、截图、水印、换色、色盘、识字、文字、字管、横幅、云词、备注、日历、数据、二维、导图、另存、导PDF、转PS、打印、转换、素材、图标、搜寻、网站、豆包、视频、仓库、计算器、音乐、宠物、收纳箱、解锁、存盘、快捷键、工具栏和设置中心。启用 JavaScript 可分类搜索并查看详情。</p></noscript>
+    </section>
+
     <section class="craft wrap" id="craft" aria-labelledby="craft-title">
-      <div class="section-intro"><p class="section-label">BUILT AROUND YOUR FLOW</p><h2 id="craft-title">熟悉的 CorelDRAW，<br>多一点得心应手。</h2><p>从图形处理到安装体验，<br>让每一步都更从容。</p></div>
+      <div class="section-intro"><p class="section-label">THOUGHTFUL IN THE DETAILS</p><h2 id="craft-title">功能之外，<br>细节也替你想好。</h2><p>外观、参数与安装，<br>一起照顾日常体验。</p></div>
       <div class="features">
-        <article class="feature"><div class="feature-top"><span>01 / 精细处理</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M9 27V12l11-5 11 5v15l-11 6Z" stroke="currentColor"/><path d="m14 24 6 3 6-3V15l-6-3-6 3Z" stroke="currentColor" stroke-dasharray="2 3"/><circle cx="31" cy="12" r="2.5" fill="currentColor"/></svg></div><h3>让细节，恰到好处。</h3><p>寻边、群组扩线、曲线开槽。<br>把常用的图形处理，放进顺手的工具里。</p></article>
+        <article class="feature"><div class="feature-top"><span>01 / 参数随行</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="8" y="7" width="24" height="27" rx="4" stroke="currentColor"/><path d="M14 15h12m-12 6h12m-12 6h7" stroke="currentColor"/></svg></div><h3>习惯，不必反复设置。</h3><p>自动记录工具参数，按需要保存预设。<br>存盘可导入、导出工具配置，账号与密钥不随包分享。</p></article>
         <article class="feature"><div class="feature-top"><span>02 / 自在外观</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="7" y="8" width="26" height="25" rx="5" stroke="currentColor"/><path d="M7 16h26M20 16v17" stroke="currentColor"/><circle cx="12" cy="12" r="1" fill="currentColor"/><path d="m25 22 3 3-3 3" stroke="currentColor"/></svg></div><h3>好工具，也合你心意。</h3><p>深浅外观与自定义界面颜色，<br>让常用的工作空间，保持熟悉的模样。</p></article>
         <article class="feature"><div class="feature-top"><span>03 / 轻松安装</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="7" y="9" width="20" height="23" rx="4" stroke="currentColor"/><path d="M13 5h16a4 4 0 0 1 4 4v18M13 21l4 4 7-8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>多个版本，一次就好。</h3><p>自动识别 CorelDRAW，支持多版本勾选。<br>也可以点选图标或窗口，找到安装位置。</p></article>
       </div>
@@ -87,6 +175,9 @@
       </div>
     </section>
   </main>
+  <dialog class="feature-dialog" aria-labelledby="detail-title">
+    <div class="detail-shell"><header class="detail-header"><div><p class="section-label" data-detail-category>功能详情</p><h2 id="detail-title"></h2></div><button type="button" class="dialog-close" aria-label="关闭功能详情">×</button></header><div class="detail-body"><div class="detail-visual"><div class="detail-mode" role="group" aria-label="详情界面模式"><button type="button" data-detail-mode="light" aria-pressed="true">白色</button><button type="button" data-detail-mode="dark" aria-pressed="false">深色</button></div><figure><img data-detail-image alt="" decoding="async"><figcaption>界面布局预览</figcaption></figure><a class="text-action" data-full-image target="_blank" rel="noopener">打开大图 <span aria-hidden="true">↗</span></a><div class="detail-fallback" hidden><img src="./assets/logo.png" width="80" height="80" alt=""><p data-fallback-text></p></div></div><div class="detail-copy"><p class="detail-summary" data-detail-summary></p><h3>用在这些地方</h3><ul data-detail-benefits></ul><div class="detail-controls"><h3>界面常用操作</h3><div data-detail-controls></div></div><p class="detail-note" data-detail-note></p></div></div></div>
+  </dialog>
   <footer class="site-footer wrap"><a class="footer-brand" href="#download">皮蛋设计<span>.</span></a><p>用顺手的工具，做喜欢的设计。</p><span>© <span data-year>2026</span> 皮蛋设计</span></footer>
   <noscript><p class="noscript-note">请启用 JavaScript 以获取最新安装器和使用下载按钮。</p></noscript>
 </body>
