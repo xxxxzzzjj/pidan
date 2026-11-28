@@ -1,0 +1,60 @@
+name: Sync Feishu and deploy download site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      allow_unpublished:
+        description: '仅首次预览：允许在飞书未配置时发布不能下载的站点'
+        type: boolean
+        default: false
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pidan-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Check release parser and download validation
+        run: npm test
+      - name: Read Feishu and prepare latest installer
+        env:
+          ALLOW_UNPUBLISHED: ${{ inputs.allow_unpublished }}
+        shell: bash
+        run: |
+          if [ "$ALLOW_UNPUBLISHED" = "true" ]; then
+            node scripts/build.mjs --sync --allow-unpublished
+          else
+            node scripts/build.mjs --sync
+          fi
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+          include-hidden-files: true
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish website and verified installer together
+        id: deployment
+        uses: actions/deploy-pages@v5
