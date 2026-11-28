@@ -2,6 +2,22 @@
 
 静态网站 + GitHub Pages Actions。用户点击下载后，页面先取得同源发布清单和已缓存的安装器，再校验文件并交给浏览器原生下载。不会打开飞书，不会调用 IDM，也不需要服务器。
 
+## 本地查看与内容维护
+
+双击项目根目录的 **网站预览.html** 即可查看，不需要启动服务。此文件为本地外观预览，下载按钮会提示前往正式站点；上线页面仍由 `public/index.html` 构建。移动或分享预览时，请连同 `public/assets` 一起保留。
+
+页面采用简约功能目录：**62 个工具入口、8 个分类**，每项显示图标、名称与一句话用途，点击后再看界面与常用操作。界面展示区提供对齐、尺寸、选同、钥匙孔四种工具，以及白色／深色和四种强调色组合。
+
+- `public/tools.js`：功能名称、分类、用途、详情和图标对应关系。
+- `public/showcase.js`：目录筛选、搜索、详情弹窗与界面预览切换。
+- `public/showcase.css`：新增展示区与目录样式，沿用网站原有深浅色变量。
+- `public/assets/icons`：现有插件图标及少量补充的线形图标。
+- `public/assets/panels`：由工具布局与主题渲染的 WebP 预览，仅用于了解界面；不包含插件程序集、用户文档或账号资料。
+- `scripts/preview.mjs`：重新生成可双击的本地预览。
+- `tests/showcase.cjs`：浏览器交互与响应式检查，请求由浏览器测试内部响应，不启动项目服务。
+
+网站主题与插件主题预览独立。网页配色切换只展示外观，不会写入已安装插件的设置。新增功能时同步更新目录、图标与预览，保持描述与实际工具一致。
+
 ## 上传到 GitHub Pages
 
 1. 在 GitHub 新建仓库，建议仓库名 `pidan-download-site`。
@@ -43,4 +59,3 @@
 - `tests/feed.test.mjs`：飞书解析、URL 限制及文件验证测试。
 - `tests/browser.cjs`：可选 Playwright 浏览器测试，需要本机 Playwright 与 Chrome。
 - `.github/workflows/pages.yml`：飞书定时同步及 GitHub Pages 部署。
-
